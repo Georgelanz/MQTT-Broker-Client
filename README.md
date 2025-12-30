@@ -1,5 +1,4 @@
 # MQTT-Broker-Client
-📲 MQTT Broker Client: A client application for publishing to and subscribing from an MQTT broker. 📡 A cornerstone of IoT communication protocols.
 
-
-- Automated update for PR #1-1764734781-250
+📡 **MQTT-Broker-Client**: A high-efficiency MQTT client for edge computing devices.
+⚡ Written in Go. Optimized for low-latency IoT communication and unstable networks.
