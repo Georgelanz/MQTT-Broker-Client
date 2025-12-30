@@ -1,15 +1,19 @@
-// main.go - Comprehensive Go starter script
 package main
-import "fmt"
-type Project struct {
-    Name    string
-    Version string
-}
+
+import (
+	"fmt"
+	"time"
+)
+
 func main() {
-    p := Project{Name: "GitHub Automated Repository Project", Version: "1.0.0"}
-    fmt.Printf("Project: %s, Version: %s\n", p.Name, p.Version)
-    fmt.Println("\nFeatures: Structs, Packages, Loops")
-    for i := 0; i < 5; i++ {
-        fmt.Printf("  - Iteration %d\n", i+1)
-    }
+	fmt.Println("[INIT] Starting MQTT Client...")
+	broker := "tcp://iot-broker.base58labs.internal:1883"
+	
+	for {
+		// Simulate connection and heartbeat
+		fmt.Printf("[CONN] Connected to broker: %s\n", broker)
+		fmt.Println("[PUB] Topic: sensors/data | Payload: {temp: 24.5, humidity: 60}")
+		
+		time.Sleep(60 * time.Second)
+	}
 }
